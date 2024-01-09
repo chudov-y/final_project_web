@@ -44,7 +44,7 @@ tasks.withType(Test) {
     systemProperties(System.getProperties())
 }
 
-task demoqa_test(type: Test) {
+task web(type: Test) {
     useJUnitPlatform {
         includeTags("ui")
     }
