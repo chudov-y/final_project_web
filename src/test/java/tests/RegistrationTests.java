@@ -14,7 +14,7 @@ import static io.qameta.allure.SeverityLevel.NORMAL;
 
 @Owner("chudov-y")
 @Epic(value = "Demo QA")
-@Feature(value = "Practise Form")
+@Feature(value = "Practice Form")
 @Story(value = "Fill out a form")
 @Tag("ui")
 
