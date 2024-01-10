@@ -35,6 +35,9 @@ public class Attach {
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))
         );
     }
+    public static String getConsoleLogs() {
+        return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
+    }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
     public static String addVideo() {

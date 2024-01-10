@@ -30,7 +30,8 @@ dependencies {
             'com.codeborne:selenide:6.17.2',
             'org.junit.jupiter:junit-jupiter:5.9.3',
             'io.qameta.allure:allure-selenide:2.19.0',
-            'com.github.javafaker:javafaker:1.0.2'
+            'com.github.javafaker:javafaker:1.0.2',
+            'org.assertj:assertj-core:3.24.1'
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 }
