@@ -1,5 +1,6 @@
 package tests;
 
+import data.RegistrationData;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -20,8 +21,9 @@ import static io.qameta.allure.SeverityLevel.NORMAL;
 
 public class RegistrationTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
+    private final RegistrationData data = new RegistrationData();
     ModalDialogComponent modalDialog = new ModalDialogComponent();
-    RandomUtils random = new RandomUtils();
+
 
     @Severity(NORMAL)
     @DisplayName("Fill registration form")
@@ -32,34 +34,34 @@ public class RegistrationTests extends TestBase {
         registrationPage.openPage();});
 
         step("Fill form", () -> {
-            registrationPage.setFirstName(random.firstName)
-                .setLastName(random.lastName)
-                .setEmail(random.email)
-                .setGender(random.gender)
-                .setUserNumber(random.phoneNumber)
-                .setDateOfBirth(random.bDay, random.bMonth, random.bYear)
-                .setSubject(random.subject)
-                .setHobbies(random.hobby)
-                .uploadPicture(random.picture)
-                .setCurrentAddress(random.address)
-                .setState(random.chooseState)
-                .setCity(random.chooseCity)
+            registrationPage.setFirstName(data.firstName)
+                .setLastName(data.lastName)
+                .setEmail(data.email)
+                .setGender(data.gender)
+                .setUserNumber(data.phoneNumber)
+                .setDateOfBirth(data.bDay, data.bMonth, data.bYear)
+                .setSubject(data.subject)
+                .setHobbies(data.hobby)
+                .uploadPicture(data.picture)
+                .setCurrentAddress(data.address)
+                .setState(data.chooseState)
+                .setCity(data.chooseCity)
                 .submit();});
 
 
         step("Verify Form", () -> {
         modalDialog.checkWindow();
 
-        modalDialog.checkResult("Student Name", random.firstName + " " + random.lastName)
-                .checkResult("Student Email", random.email)
-                .checkResult("Gender", random.gender)
-                .checkResult("Mobile", random.phoneNumber)
-                .checkResult("Date of Birth", random.bDay + " " + random.bMonth+ "," + random.bYear)
-                .checkResult("Subjects", random.subject)
-                .checkResult("Hobbies", random.hobby)
-                .checkResult("Picture", random.picture)
-                .checkResult("Address", random.address)
-                .checkResult("State and City", random.chooseState + " " + random.chooseCity);});
+        modalDialog.checkResult("Student Name", data.firstName + " " + data.lastName)
+                .checkResult("Student Email", data.email)
+                .checkResult("Gender", data.gender)
+                .checkResult("Mobile", data.phoneNumber)
+                .checkResult("Date of Birth", data.bDay + " " + data.bMonth+ "," + data.bYear)
+                .checkResult("Subjects", data.subject)
+                .checkResult("Hobbies", data.hobby)
+                .checkResult("Picture", data.picture)
+                .checkResult("Address", data.address)
+                .checkResult("State and City", data.chooseState + " " + data.chooseCity);});
 
     }
 
@@ -72,18 +74,18 @@ public class RegistrationTests extends TestBase {
         registrationPage.openPage();});
 
         step("Fill form", () -> {
-            registrationPage.setFirstName(random.firstName)
-                .setLastName(random.lastName)
-                .setGender(random.gender)
-                .setUserNumber(random.phoneNumber)
+            registrationPage.setFirstName(data.firstName)
+                .setLastName(data.lastName)
+                .setGender(data.gender)
+                .setUserNumber(data.phoneNumber)
                 .submit();});
 
         step("Verify Form", () -> {
         modalDialog.checkWindow();
 
-        modalDialog.checkResult("Student Name", random.firstName + " " + random.lastName)
-                .checkResult("Gender", random.gender)
-                .checkResult("Mobile", random.phoneNumber);});
+        modalDialog.checkResult("Student Name", data.firstName + " " + data.lastName)
+                .checkResult("Gender", data.gender)
+                .checkResult("Mobile", data.phoneNumber);});
     }
 
     @Severity(NORMAL)
