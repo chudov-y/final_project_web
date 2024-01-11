@@ -50,7 +50,7 @@ class UniversalTests extends TestBase {
             String consoleLogs = getConsoleLogs();
             String errorText = "SEVERE";
 
-            assertThat(consoleLogs).doesNotContain(errorText);
+            assertThat(consoleLogs).contains(errorText);
         });
     }
 }

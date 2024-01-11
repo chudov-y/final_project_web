@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import pages.components.ModalDialogComponent;
-import utils.RandomUtils;
 
 import static io.qameta.allure.Allure.step;
 import static io.qameta.allure.SeverityLevel.NORMAL;
