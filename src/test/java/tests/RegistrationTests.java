@@ -25,7 +25,7 @@ public class RegistrationTests extends TestBase {
 
 
     @Severity(NORMAL)
-    @DisplayName("Fill registration form")
+    @DisplayName("Fill registration form with all fields")
     @Description("Fill registration form with all fields")
     @Test
     void successfulRegistrationTest() {
