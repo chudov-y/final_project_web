@@ -11,7 +11,7 @@
 # <a name="TableOfContents">Table of contents</a>
 
 + [Description](#Description)
-+ [Tools and technologies](#Technology)
++ [Tools and technologies](#tools-and-a-technologies)
 + [How to run](#Jenkins)
     + [Gradle command](#GradleCommand)
     + [Run in Jenkins](#RunInJenkins)
