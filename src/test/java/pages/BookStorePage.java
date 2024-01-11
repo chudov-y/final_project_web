@@ -9,7 +9,7 @@ import static com.codeborne.selenide.CollectionCondition.exactTexts;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-import static pages.PagesLinks.BOOK_STORE;
+//import static pages.PagesLinks.BOOK_STORE;
 
 
 public class BookStorePage {
@@ -38,8 +38,8 @@ public class BookStorePage {
     }
 
     public void openPage() {
-        open(BOOK_STORE.getLink());
-        header.shouldHave(text(BOOK_STORE.getHeader()));
+        open("/books");
+        header.shouldHave(text("Book Store"));
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
     }

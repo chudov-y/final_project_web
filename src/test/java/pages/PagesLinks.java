@@ -4,7 +4,8 @@ public enum PagesLinks {
 
     REGISTRATION_FORM("/automation-practice-form", "Practice Form"),
     LOGIN("/login", "Login"),
-    BOOK_STORE("/books", "Book Store"),
+   // BOOK_STORE("/books", "Book Store"),
+    TEXT_BOX("/text-box", "Text Box"),
     PROFILE("/profile", "Profile");
 
     private final String link,
