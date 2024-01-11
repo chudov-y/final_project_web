@@ -20,7 +20,6 @@
 + [Allure TestOps integration](#Allure-TestOps-integration)
     + [Project in Allure TestOps](#Project-in-Allure-TestOps)
     + [Dashboard](#Dashboard)
-    + [Defects](#Defects)
 + [Jira integration](#Jira)
 + [Video of running tests](#Video)
 
@@ -190,15 +189,6 @@ Manual test-cases also can be added in TMS in case of need (via web interface or
 Automation trends charts, distribution tests by some different parameters etc.:
 <p align="center">
   <img src="media/screenshots/AllureTestOpsDashboard.png" alt="AllureTestOpsDashboard" width="1050">
-</p>
-
-[Back to the table of contents ⬆](#Table-Of-Contents)
-
-## <a name="Defects">Defects</a>
-
-Knows defects are automatically recognized by defined patterns for test fails in further launches.
-<p align="center">
-  <img src="media/screenshots/AllureTestOpsDefects.png" alt="AllureTestOpsDefects" width="1050">
 </p>
 
 [Back to the table of contents ⬆](#Table-Of-Contents)
