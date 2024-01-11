@@ -71,7 +71,7 @@ The autotests in this project are written in `Java` using `Selenide` framework.\
 `Telegram Bot` - for test results notifications.\
 `Allure TestOps` - as Test Management System.
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
 # <a name="HowToRun">How to run</a>
 
@@ -97,10 +97,10 @@ Additional properties are retrieved from the corresponding properties files:
 ./resources/config/${value}.properties
 ```
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
 
-## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/015-Kenzalani-demoqa)</a>
+## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/22_Bubalov_FinalProject_Web/)</a>
 
 Main page of the build:
 <p align="center">
@@ -124,7 +124,7 @@ After the build is done the test results are available in:
 <img src="media/screenshots/JenkinsFinishedBuild.png" alt="JenkinsFinishedBuild" width="950">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
 # <a name="TelegramNotifications">Telegram Notifications</a>
 
@@ -133,9 +133,9 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 <img src="media/screenshots/TelegramNotification.png" alt="TelegramNotification" width="550">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
-# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/015-Kenzalani-demoqa/18/allure/)</a>
+# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/22_Bubalov_FinalProject_Web/14/allure/#)</a>
 
 ## Main page
 
@@ -169,9 +169,9 @@ Also additional test artifacts are available:
   <img src="media/screenshots/AllureReportBehaviors.png" alt="AllureReportBehaviors" width="1150">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
-# <a name="AllureTestOps">[Allure TestOps](https://allure.autotests.cloud/project/1810/dashboards) integration</a>
+# <a name="AllureTestOps">[Allure TestOps](https://allure.autotests.cloud/project/3919/dashboards) integration</a>
 
 ## <a name="AllureTestOpsProject">Project in Allure TestOps</a>
 
@@ -192,7 +192,7 @@ Automation trends charts, distribution tests by some different parameters etc.:
   <img src="media/screenshots/AllureTestOpsDashboard.png" alt="AllureTestOpsDashboard" width="1050">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
 ## <a name="Defects">Defects</a>
 
@@ -201,9 +201,9 @@ Knows defects are automatically recognized by defined patterns for test fails in
   <img src="media/screenshots/AllureTestOpsDefects.png" alt="AllureTestOpsDefects" width="1050">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
 
-# <a name="Jira">Integration with [Jira](https://jenkins.autotests.cloud/job/015-Kenzalani-demoqa/18/allure/)</a>
+# <a name="Jira">Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1041)</a>
 <p align="center">
   <img src="media/screenshots/Jira.png" alt="AllureTestOpsDefects" width="1050">
 </p>
@@ -213,4 +213,4 @@ Knows defects are automatically recognized by defined patterns for test fails in
   <img src="media/screenshots/video.gif" alt="VideoForm" width="500">
 </p>
 
-[Back to the table of contents ⬆](#TableOfContents)
+[Back to the table of contents ⬆](#Table-Of-Contents)
