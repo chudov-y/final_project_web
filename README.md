@@ -18,7 +18,7 @@
 + [Telegram Notifications](#telegram-notifications)
 + [Test results report in Allure Report](#test-results-report-in-allure-Report)
 + [Allure TestOps integration](#Allure-TestOps-integration)
-    + [Project in Allure TestOps](#AllureTestOpsProject)
+    + [Project in Allure TestOps](#Project-in-Allure-TestOps)
     + [Dashboard](#Dashboard)
     + [Defects](#Defects)
 + [Jira integration](#Jira)
