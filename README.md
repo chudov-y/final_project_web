@@ -200,7 +200,7 @@ Automation trends charts, distribution tests by some different parameters etc.:
 # <a name="Video">Video of running tests</a>
 
 <p align="center">
-  <img src="media/screenshots/video.gif" alt="VideoForm" width="500">
+  <img src="media/screenshots/video.gif" alt="VideoForm" width="800">
 </p>
 
 [Back to the table of contents ⬆](#Table-Of-Contents)
