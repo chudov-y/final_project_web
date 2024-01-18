@@ -24,7 +24,6 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = System.getProperty("webDriver", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        //SelenideLogger.addListener("allure", new AllureSelenide());
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
