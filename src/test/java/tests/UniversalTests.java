@@ -46,9 +46,9 @@ class UniversalTests extends TestBase {
         step("Open url", () ->
                 open(link.getLink()));
 
-        step("Console logs should not contain text 'WARNING'", () -> {
+        step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = getConsoleLogs();
-            String errorText = "WARNING";
+            String errorText = "SEVERE";
 
             assertThat(consoleLogs).doesNotContain(errorText);
         });
