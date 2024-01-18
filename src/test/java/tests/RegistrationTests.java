@@ -19,9 +19,9 @@ import static io.qameta.allure.SeverityLevel.NORMAL;
 
 
 public class RegistrationTests extends TestBase {
-    RegistrationPage registrationPage = new RegistrationPage();
+    private final RegistrationPage registrationPage = new RegistrationPage();
     private final RegistrationData data = new RegistrationData();
-    ModalDialogComponent modalDialog = new ModalDialogComponent();
+    private final ModalDialogComponent modalDialog = new ModalDialogComponent();
 
 
     @Severity(NORMAL)
@@ -32,7 +32,7 @@ public class RegistrationTests extends TestBase {
         step("Open form", () -> {
         registrationPage.openPage();});
 
-        step("Fill form", () -> {
+        step("Fill all fields in the form", () -> {
             registrationPage.setFirstName(data.firstName)
                 .setLastName(data.lastName)
                 .setEmail(data.email)
@@ -72,7 +72,7 @@ public class RegistrationTests extends TestBase {
         step("Open form", () -> {
         registrationPage.openPage();});
 
-        step("Fill form", () -> {
+        step("Fill only required fields in the form", () -> {
             registrationPage.setFirstName(data.firstName)
                 .setLastName(data.lastName)
                 .setGender(data.gender)
