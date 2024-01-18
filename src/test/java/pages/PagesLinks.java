@@ -8,19 +8,19 @@ public enum PagesLinks {
     TEXT_BOX("/text-box", "Text Box"),
     PROFILE("/profile", "Profile");
 
-    private final String link,
-            header;
+    private final String link;
+   //         header;
 
     PagesLinks(String link, String header) {
         this.link = link;
-        this.header = header;
+    //    this.header = header;
     }
 
     public String getLink() {
         return link;
     }
 
-    public String getHeader() {
-        return header;
-    }
+//    public String getHeader() {
+//        return header;
+//    }
 }
