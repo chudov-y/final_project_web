@@ -134,7 +134,7 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 
 [Back to the table of contents ⬆](#Table-Of-Contents)
 
-# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/22_Bubalov_FinalProject_Web/14/allure/#)</a>
+# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/22_Bubalov_FinalProject_Web/allure/)</a>
 
 ## Main page
 
