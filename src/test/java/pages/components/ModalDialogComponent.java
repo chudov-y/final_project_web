@@ -14,6 +14,10 @@ public class ModalDialogComponent {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
     }
 
+    public void checkEmptyWindow() {
+        $(".modal-dialog").shouldNot(appear);
+    }
+
     public ModalDialogComponent checkResult(String key, String value) {
         if (!Configuration.browser.equalsIgnoreCase("firefox") && "Picture".equals(key)) {
             $(".table-responsive").$(byText(key)).parent()

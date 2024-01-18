@@ -90,12 +90,19 @@ public class RegistrationTests extends TestBase {
     @Severity(NORMAL)
     @DisplayName("Fill registration form with empty fields")
     @Test
-    void emptyFieldsTest(){
+    void emptyFieldsTest() {
         step("Open form", () -> {
-            registrationPage.openPage();});
+            registrationPage.openPage();
+        });
 
 
         step("Click Submit", () -> {
-            registrationPage.submit();});
-        }
+            registrationPage.submit();
+        });
+
+        step("Verify form", () -> {
+            modalDialog.checkEmptyWindow();
+        });
+    }
+
 }
