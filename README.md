@@ -75,6 +75,18 @@ To run locally the following command can be is used:
 ```bash
 gradle clean test
 ```
+## <a name="GradleCommand">Remote run </a>
+
+Remote run with additional parameters:
+
+```bash
+clean
+test
+-Dbrowser=${BROWSER} -DbrowserVersion=${BROWSER_VERSION} -DbrowserSize=${BROWSER_SIZE} -DwebDriver=${WEB_DRIVER}
+```
+>- *BROWSER* - browser for Web tests, chrome,firefox and opera supported (Default: chrome)
+>- *BROWSER_VERSION* - version of browser for Web tests (Default: 100)
+>- *BROWSER_SIZE* - size of browser for Web tests (Default: 1920x1080)
 
 [Back to the table of contents ⬆](#Table-Of-Contents)
 
