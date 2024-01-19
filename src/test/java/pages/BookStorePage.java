@@ -9,7 +9,6 @@ import static com.codeborne.selenide.CollectionCondition.exactTexts;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-//import static pages.PagesLinks.BOOK_STORE;
 
 
 public class BookStorePage {

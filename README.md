@@ -33,10 +33,8 @@ A brief list of interesting facts about the project:
 - [x] Parametrized tests
 - [x] Parametrized build
 - [x] Different configuration files for test running depending on build parameters
-- [x] Config with `Owner` library
 - [x] `Allure TestOps` integration
 - [x] Autotests as test documentation
-- [x] Parallel execution
 - [x] Failing tests retries
 
 # <a name="Technology">Tools and a technologies</a>
@@ -76,20 +74,6 @@ To run locally the following command can be is used:
 
 ```bash
 gradle clean test
-```
-
-Additional parameters:
-> `-Dthreads=<number_of_threads>` can be added for parallel tests execution\
-> `-Denv=remote` can be added for remote tests execution when remote url is set in remote.properties
-
-`-Dtag=<tag>` - tests with this tag will be executed:
->- *api*
->- *ui*
-
-Additional properties are retrieved from the corresponding properties files:
-
-```bash
-./resources/config/${value}.properties
 ```
 
 [Back to the table of contents ⬆](#Table-Of-Contents)
