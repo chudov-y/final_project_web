@@ -34,7 +34,7 @@ public class RegistrationPage {
 
         return this;
     }
-    @Step("Set first name {data.firstName}")
+    @Step("Set first name")
     public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
 
