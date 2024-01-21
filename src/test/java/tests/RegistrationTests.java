@@ -48,7 +48,7 @@ public class RegistrationTests extends TestBase {
                 .submit();});
 
 
-        step("Verify Form", () -> {
+        step("Check results in opened table", () -> {
         modalDialog.checkWindow();
 
         modalDialog.checkResult("Student Name", data.firstName + " " + data.lastName)
@@ -79,7 +79,7 @@ public class RegistrationTests extends TestBase {
                 .setUserNumber(data.phoneNumber)
                 .submit();});
 
-        step("Verify Form", () -> {
+        step("Check results in opened table", () -> {
         modalDialog.checkWindow();
 
         modalDialog.checkResult("Student Name", data.firstName + " " + data.lastName)
@@ -100,7 +100,7 @@ public class RegistrationTests extends TestBase {
             registrationPage.submit();
         });
 
-        step("Verify form", () -> {
+        step("Results table is not appear", () -> {
             modalDialog.checkEmptyWindow();
         });
     }

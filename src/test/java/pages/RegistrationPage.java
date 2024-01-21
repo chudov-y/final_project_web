@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
-    private final RegistrationData data = new RegistrationData();
 
     private final CalendarComponent calendar = new CalendarComponent();
     private final SelenideElement titleLabel =  $(".practice-form-wrapper"),
