@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
 
 
-    CalendarComponent calendar = new CalendarComponent();
-    SelenideElement titleLabel =  $(".practice-form-wrapper"),
+    private final CalendarComponent calendar = new CalendarComponent();
+    private final SelenideElement titleLabel =  $(".practice-form-wrapper"),
                     firstNameInput =  $("#firstName"),
                     lastNameInput =  $("#lastName"),
                     userEmailInput = $("#userEmail"),
